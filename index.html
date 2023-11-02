@@ -8,40 +8,37 @@
     <link rel="stylesheet" href="/css/index.css">
     <title>Encriptador</title>
 </head>
+
 <body>
+
     <header>
-        <img class="logo" src="/imagenes/Logo.png" >
         <h1 class="titulo">ENCRIPTADOR</h1>
     </header>
 
     <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
-            <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptador</button>
-                <button class="btn-desencriptar" onclick="btndesenCriptar()">Desencriptar</button>
-            </div>
-        </section>
-
-       <section>
-            <textarea id="mensaje"  cols="20" rows="10"></textarea>
-
-            <div class="botones2">
-                <button id="copiar" onclick="btncopiar();">Copiar</button>
-                <button id="limpiar" onclick="btnlimpiar();">Limpiar</button>
+        <div class="contenedor" >
+            <div class="encriptar">
+                <textarea class="text-area" cols="20" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+                <div>
+                     <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btndesenCriptar()">Desencriptar</button>
+                </div>
             </div>
 
-            
-            
-           
-            
-
-
-        </section>
-
+            <div class="desencriptar">
+                <textarea id="mensaje"  cols="20" rows="10"></textarea>
+                <div>
+                    <h6 class="informacion">Copia el texto</h6>
+               </div>
+                <div class="botones2">
+                    <button id="copiar" onclick="btncopiar();">Copiar</button>
+                    <button id="limpiar" onclick="btnlimpiar();">Limpiar</button>
+                </div>
+            </div>
+        </div>     
     </main>
 
     <script src="/js/encriptador.js"></script>
